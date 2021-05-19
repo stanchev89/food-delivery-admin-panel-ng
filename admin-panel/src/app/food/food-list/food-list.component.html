@@ -1,0 +1,13 @@
+<section class="food-list">
+    <h1 class="food-list-title">{{typeMenu}}</h1>
+    <ul class="food-list-ul">
+        <h3 class="food-list-category-title">Salads</h3>
+        <li *ngFor="let dish of (salads$ | async)">{{dish.name}}</li>
+        <h3 class="food-list-category-title">Soups</h3>
+        <li *ngFor="let dish of (soups$ | async)">{{dish.name}}</li>
+        <h3 class="food-list-category-title">Main dishes</h3>
+        <li *ngFor="let dish of (mainDish$ | async)">{{dish.name}}</li>
+        <h3 class="food-list-category-title">Deserts</h3>
+        <li *ngFor="let dish of (deserts$ | async)">{{dish.name}}</li>
+    </ul>
+</section>

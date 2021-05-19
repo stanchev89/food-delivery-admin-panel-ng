@@ -1,0 +1,14 @@
+<article class="header-bar">
+  <img src="./assets/logo.png" alt="site logo" class="site-logo" routerLink="/">
+  <ul class="header-nav">
+    <li>
+      <a routerLink="{{this.routesMap.food.root}}">Food</a>
+    </li>
+    <li>
+      <a [routerLink]="this.routesMap.users.root">Users</a>
+    </li>
+    <li>
+      <a [routerLink]="this.routesMap.orders.root">Orders</a>
+    </li>
+  </ul>
+</article>

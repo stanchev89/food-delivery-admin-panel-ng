@@ -1,0 +1,8 @@
+<aside class="aside" *ngIf="(currentPage$ | async)">
+    <ul class="aside-ul">
+        <li *ngFor="let opt of (asideMenuOptions$ | async)">
+            <a routerLink="{{(currentPage$ | async) + '/' + opt[0]}}">{{opt[1]}}</a>
+        </li>
+    </ul>
+
+</aside>

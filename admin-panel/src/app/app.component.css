@@ -1,0 +1,10 @@
+main {
+    display: flex;
+    flex-wrap: wrap;
+}
+app-header {
+    flex-basis: 100%;
+}
+.container {
+    max-width: 80%;
+}
